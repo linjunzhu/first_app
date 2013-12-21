@@ -1,5 +1,10 @@
 FirstApp::Application.routes.draw do
-  root to: "404.html"
+  resources :microposts
+
+  resources :users
+
+  root to: "microposts#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
